@@ -1,8 +1,8 @@
 <?php
 
-namespace math;
+namespace NOHA\Math;
 
-class math
+class Calculator
 {
     /**
      * Add two number.
@@ -49,9 +49,11 @@ class math
      */
     public function divide($x, $y)
     {
-        $y == 0 ? '' : $result = $x / $y;;
+        if ($y != 0) {
+            return $x / $y;
+        }
 
-        return $result;
+        return 'Denominator must not = 0';
     }
 
     /**
@@ -63,8 +65,10 @@ class math
      */
     public function mod($x, $y)
     {
-        $y == 0 ? '' : $result = $x % $y;;
+        if ($y != 0) {
+            return $x % $y;
+        }
 
-        return $result;
+        return 'Denominator must not = 0';
     }
 }

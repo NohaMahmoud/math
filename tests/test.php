@@ -2,6 +2,6 @@
 
 require_once __DIR__.'/../vendor/autoload.php'; // Autoload files using Composer autoload
 
-use math\math;
+use NOHA\Math\Calculator;
 
-echo math::add(5,8);
+echo Calculator::add(8,1);
