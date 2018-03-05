@@ -11,7 +11,7 @@ class Calculator
      * @param $y
      * @return mixed
      */
-    public function add($x, $y)
+    public static function add($x, $y)
     {
         return $x + $y;
     }
@@ -23,7 +23,7 @@ class Calculator
      * @param $y
      * @return mixed
      */
-    public function subtract($x, $y)
+    public static function subtract($x, $y)
     {
         return $x - $y;
     }
@@ -35,7 +35,7 @@ class Calculator
      * @param $y
      * @return float|int
      */
-    public function multiply($x, $y)
+    public static function multiply($x, $y)
     {
         return $x * $y;
     }
@@ -47,7 +47,7 @@ class Calculator
      * @param $y
      * @return float|int
      */
-    public function divide($x, $y)
+    public static function divide($x, $y)
     {
         if ($y != 0) {
             return $x / $y;
@@ -63,7 +63,7 @@ class Calculator
      * @param $y
      * @return int
      */
-    public function mod($x, $y)
+    public static function mod($x, $y)
     {
         if ($y != 0) {
             return $x % $y;
